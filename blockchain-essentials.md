@@ -58,3 +58,11 @@ All blockchains aim to provide *irrefutable proof* that a set of transaction occ
   - Encourages best practice by making recommendations to members
 - Market Maker
   - The organization who innovates
+
+## Hyperledger Fabric
+
+### Distributed ledger
+
+- An implementation of blockchain technology that is a foundation for developing blockchain applications for business
+- Emphasis on ledger, smart contracts, consensus, confidentiality, resiliency and scalability
+- Long Term Service release available, with emphasis on production operational and serviceability enhancements; new programming model abstraction for ease of development and RAFT consensus available
