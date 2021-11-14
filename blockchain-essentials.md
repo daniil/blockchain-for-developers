@@ -8,6 +8,8 @@
 
 **Transaction** - an asset transfer between participants
 
+**Asset** - anything that is capable of being owned or controlled to produce value
+
 **Contract** - the conditions for a transaction to occur
 
 There are multiple participants that duplicate the ;ledgers and contracts.
@@ -60,6 +62,13 @@ All blockchains aim to provide *irrefutable proof* that a set of transaction occ
   - The organization who innovates
 
 ## Hyperledger Fabric
+
+IBM Blockchain Platform is a set of tools for building, operating and growing a blockchain network.
+
+Hyperledger is:
+- A collection of business blockchain frameworks
+- A collection of business blockchain tools
+- A structured community including: governance, technical, legal and marketing
 
 ### Distributed ledger
 
