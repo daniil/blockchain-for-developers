@@ -23,3 +23,38 @@ Blockchain provides:
 - *finality*: once the transaction is committed it can not be reversed
 
 All blockchains aim to provide *irrefutable proof* that a set of transaction occurred between participants
+
+## IBM Blockchain solutions
+
+- Financial
+  - Trade Finance
+  - Cross currency payments
+  - Mortgages
+  - Letters of Credit
+- Public Sector
+  - Asset Registration
+  - Citizen Identity
+  - Medical records
+  - Medicine supply chain
+- Retail
+  - Supply chain
+  - Loyalty programs
+  - Supplier > Retailer information sharing
+- Insurance
+  - Claims processing
+  - Risk provenance
+  - Asset usage history
+  - Claims file
+- Manufacturing
+  - Supply chain
+  - Product parts
+  - Maintenance tracking
+
+### Key Players
+
+- Regulator
+  - An organization who enforces the rules of play
+- Industry Group
+  - Encourages best practice by making recommendations to members
+- Market Maker
+  - The organization who innovates
