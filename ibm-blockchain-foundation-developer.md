@@ -17,3 +17,9 @@ A Hyperledger Fabric network consists of three key types of components:
 - **Peer node**: holds a copy of the ledger and is responsible for running smart contracts.
 - **Orderer node**: part of a distributed ordering service that agrees the order that transactions are added to the ledger.
 - **Certificate Authority**: responsible for issuing the certificates that identify users and organizations on the network.
+
+In Hyperledger Fabric, a smart contract uses a *state* database containing the current value of all business objects in the ledger to simplify transaction generation. Each smart contract can run on a set of peers in each organization.
+
+### Smart contract determinism
+
+Whilst it may look like it, the effect of `context.putState` is not immediate. The business object identified by myAssetId will only be updated when every organization in the network agrees with the generated transaction response. This requires the consensus process to complete across the network. We need to ensure that our smart contract transactions are *deterministic*; that is, each must always generate the same transaction response for a given set of transaction inputs. 
