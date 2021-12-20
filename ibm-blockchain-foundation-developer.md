@@ -23,3 +23,12 @@ In Hyperledger Fabric, a smart contract uses a *state* database containing the c
 ### Smart contract determinism
 
 Whilst it may look like it, the effect of `context.putState` is not immediate. The business object identified by myAssetId will only be updated when every organization in the network agrees with the generated transaction response. This requires the consensus process to complete across the network. We need to ensure that our smart contract transactions are *deterministic*; that is, each must always generate the same transaction response for a given set of transaction inputs. 
+
+### Fabric Environment
+
+- **Channels** define the scope of each network, and form one method of choosing how organizations share data. Deployed smart contracts that are available to the network will show under channels. We will look at channels in a later tutorial.
+- **Nodes** are the Hyperledger Fabric components that make the system work. There are three types of nodes:
+  - Peers which host ledgers and execute smart contracts
+  - Orderers which assert transaction order and distribute blocks to peers
+  - Certificate authorities which provide the means of identifying users and organizations on the network
+- **Organizations** are the members of the blockchain network. Each organization will consist of many different users and types of users.
