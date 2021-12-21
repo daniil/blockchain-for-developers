@@ -32,3 +32,21 @@ Whilst it may look like it, the effect of `context.putState` is not immediate. T
   - Orderers which assert transaction order and distribute blocks to peers
   - Certificate authorities which provide the means of identifying users and organizations on the network
 - **Organizations** are the members of the blockchain network. Each organization will consist of many different users and types of users.
+
+### Identities, wallets and gateways
+
+The resources that you can access in a Hyperledger Fabric network are determined according to your identity; that's why its called a permissioned blockchain. Your identity is typically represented by an X.509 certificate issued by your organization, and stored in your wallet. Once you have an identity and a wallet, you can create a gateway that allows you to submit transactions to a network.
+
+A gateway represents a connection to a set of Hyperledger Fabric networks. If you want to submit a transaction, whether using VS Code or your own application, a gateway makes it easy to interact with a network: you configure a gateway, connect to it with an identity from your wallet, choose a particular network, and start submitting transactions using a smart contract that has been deployed in that network.
+
+A gateway is configured using a connection profile, which identifies a single peer in the network as an initial connection point. 
+
+The difference between Fabric Environments and Fabric Gateways: an environment gives an overview of all the resources available to you in a Hyperledger Fabric network; a gateway provides an access point to those resources.
+
+### Hyperledger Fabric Transactions
+
+Hyperledger Fabric can generate two different kinds of transactions:
+
+- *Submitted* transactions are recorded on the blockchain ledger.  These are used when you want to update the current value of the ledger. Submitted transactions go through the full consensus process before they are recorded on the ledger. It is possible to submit read-only ledger transactions, but it's less common.
+
+- *Evaluated* transactions are not recorded on the blockchain ledger. These transactions are typically used when you want to simply query the current value of the ledger. Evaluated transactions do not go through the consensus process; they are run on a single peer, and the result is returned to the caller. It is possible to evaluate read-write transactions, but it's less common. 
